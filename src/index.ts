@@ -1,4 +1,2 @@
-let x = 0;
-x = "hi"
+    let x = 0;
 
-x = false
