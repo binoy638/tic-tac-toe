@@ -10,12 +10,12 @@
     "format:check": "npx prettier -c \"**/*.{js,jsx,ts,tsx,json}\"",
     "format": "npx prettier -w \"**/*.{js,jsx,ts,tsx,json}\"",
     "lint": "eslint \"src/**/*.{js.jsx,ts,tsx}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pre-commit": "npm run typecheck && lint-staged"
   },
-  "lint-staged":{
-"src/**/*.{js.jsx,ts,tsx}":"eslint",
-"**/*.{js,jsx,ts,tsx,json}":"prettier --write"
-
+  "lint-staged": {
+    "src/**/*.{js.jsx,ts,tsx}": "eslint",
+    "**/*.{js,jsx,ts,tsx,json}": "prettier --write"
   },
   "dependencies": {
     "expo": "~42.0.1",
