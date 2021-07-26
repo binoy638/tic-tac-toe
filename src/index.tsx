@@ -1,14 +1,17 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { Game, Home } from "@screens";
+import { StyleSheet, View } from "react-native";
+
+import { Text, AppBootstrap } from "@components";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Home />
-      <Game />
-    </View>
+    <AppBootstrap>
+      <View style={styles.container}>
+        <Text style={{ fontSize: 25 }} weigth="700">
+          Yo
+        </Text>
+      </View>
+    </AppBootstrap>
   );
 }
 
