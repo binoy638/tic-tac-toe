@@ -9,12 +9,12 @@
     "typecheck": "tsc",
     "format:check": "npx prettier -c \"**/*.{js,jsx,ts,tsx,json}\"",
     "format": "npx prettier -w \"**/*.{js,jsx,ts,tsx,json}\"",
-    "lint": "eslint \"src/**/*.{js.jsx,ts,tsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install",
     "pre-commit": "npm run typecheck && lint-staged"
   },
   "lint-staged": {
-    "src/**/*.{js.jsx,ts,tsx}": "eslint",
+    "src/**/*.{js,jsx,ts,tsx}": "eslint",
     "**/*.{js,jsx,ts,tsx,json}": "prettier --write"
   },
   "dependencies": {
